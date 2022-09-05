@@ -1,24 +1,57 @@
 # vue_cards_ksk
 
-## Project setup
-```
-npm install
-```
+## Как установить проект
 
-### Compiles and hot-reloads for development
-```
+Используется node версии 18.7.0 (если не установлена node то устанавливаем)
+
+Через github:
+
+1) Клонируем проект
+2) Переходим в папку с проектом
+3) Устанавливаем зависимости
+4) Запускаем проект
+
+``` shell
+git clone https://github.com/MotokoKusa/vue_cards_ksk.git
+cd vue-films_list
+npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+С помощью архива:
+
+1) Распаковываем архив
+2) Открываем папку с проектом
+3) Устанавливаем зависимости
+4) Запускаем проект
+
+``` shell
+cd vue_cards_ksk
+npm install
+npm run serve
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Какие зависимости там есть
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+В проекте используется:
+
+- [ESLint](https://eslint.org) — это утилита, которая может анализировать написанный код. Фактически, это статический
+  анализатор кода, и он может находить синтаксические ошибки, баги или неточности форматирования
+  
+- [Vue Router](https://router.vuejs.org/) — инструмент для настройки маршрутизации
+
+- [Vuex](https://vuex.vuejs.org/) — хранилище данных
+
+## Файловая структура проекта
+
+Папка `assets/` - содержит глобальные стили а так же изображения.
+
+Папка `components/` - содержит компоненты Vue.js для приложения.
+
+Папка `store/` - содержит файлы Vuex хранилища.
+
+Папка `pages/` - содержит файлы страниц.
+
+Папка `router/` - содержит файлы Vue Router.
+
+Файл `data/` - служит для хранение локальных данных.
