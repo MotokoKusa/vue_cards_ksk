@@ -59,6 +59,13 @@
       top: 50%;
       transform: translateY(-50%);
     }
+
+    &:hover {
+      &::before {
+        background: url("../../assets/images/delete1.svg") no-repeat center center / 100%;
+      }
+      color: var(--color-blue);
+    }
   }
 
 }
