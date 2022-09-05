@@ -1,0 +1,64 @@
+.info-card {
+  box-shadow: 0 .4rem 1.2rem rgba(212, 212, 212, 0.25);
+  border-radius: .3rem;
+
+  &__head {
+    position: relative;
+    padding: 1.6rem 1.2rem 1.2rem 1.2rem;
+    background: rgba(237, 232, 245, 0.5);
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      text-transform: uppercase;
+    }
+    &-btn {
+      width: 1.6rem;
+      height: 1.6rem;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+    &-delete {
+      background: var(--color-white);
+      box-shadow: 0 .4rem .4rem rgba(182, 182, 182, 0.25);
+      border-radius: .2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      border: none;
+      width: 14.8rem;
+      height: 4rem;
+      position: absolute;
+      right: 3.1rem;
+      top: 3.1rem;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 2.4rem;
+        height: 2.4rem;
+        background: url("../../assets/images/delete.svg") no-repeat center center / 100%;
+        left: .8rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &__content {
+
+    padding: 0 1.6rem .8rem 1.6rem;
+    &-row {
+      padding-top: 1.6rem;
+      display: grid;
+      grid-gap: .8rem;
+      grid-template-columns: 12.3rem 1fr;
+    }
+    &__date {
+      &-txt {
+        max-width: 7.4rem;
+      }
+    }
+  }
+}
